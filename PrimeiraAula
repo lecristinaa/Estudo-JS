@@ -1,0 +1,10 @@
+// aspas simples e duplas não possuem diferença (' = ")
+// ponto e vírgula não é necessário
+// true e false devem ser minúsculo
+// let nome = 'valor'
+
+let idade = 17
+let altura = 1.63
+let isEstudando = true
+
+console.log(idade)
