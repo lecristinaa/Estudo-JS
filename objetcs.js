@@ -1,5 +1,4 @@
-let alunos = [
-    {
+let alunos = [{
         nome: "Isabelle",
         idade: 17,
         ra: "245879",
@@ -17,7 +16,7 @@ let alunos = [
     },
     {
         nome: "Graziella",
-        idade: 15,
+        idade: 16,
         ra: "264878",
         cursando: true,
         materiasCursadas: [
@@ -30,10 +29,63 @@ let alunos = [
                 professor: "Rita"
             },
         ]
+    },
+    {
+        nome: "Juliana",
+        idade: 18,
+        ra: "254789",
+        cursando: true,
+        materiasCursadas: [
+            {
+                nome: "Farmacologia",
+                professor: "Odair"
+            },
+            {
+                nome: "Regras Farmacêuticas",
+                professor: "Rita"
+            },
+        ]
+    },
+    {
+        nome: "Sarah",
+        idade: 16,
+        ra: "274563",
+        cursando: true,
+        materiasCursadas: [
+            {
+                nome: "Primeiros Socorros",
+                professor: "Angela"
+            },
+            {
+                nome: "Tecido",
+                professor: "Dayane"
+            },
+        ]
     }
 ]
+    
 
-console.log(alunos.materiasCursadas)
+alunos.sort(function(a, b) {
+    if(a.nome < b.nome) {
+      return -1;
+    } else {
+      return true;
+    }
+})
+
+alunos.map(alunos => { 
+    console.log(alunos.nome)
+})
+
+console.log('----------------')
+
+
+
+for (let i = 0; i < alunos.length; i++) {
+    console.log(alunos[i].nome + " : " + alunos[i].idade) 
+}
+
+
 
 
 
