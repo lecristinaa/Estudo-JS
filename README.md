@@ -1,4 +1,4 @@
-# estudo.js
+# Estudo JS
 Estudo de JavaScrip - 2024
 
 - Criar variáveis em geral e suas diferenças;
